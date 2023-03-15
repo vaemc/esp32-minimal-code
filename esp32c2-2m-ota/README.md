@@ -1,11 +1,9 @@
+# esp32c2-2m-ota
 
+2m flash大小的ESP32C2 OTA升级示例
 
 # 配置项
 
-
-* 设置wifi `idf.py menuconfig` -> `Example Connection Configuration` -> `WiFi SSID` & `WiFi Password`
-
-* OAT地址为http的情况下需要启用 `Allow HTTP for OAT`
-![](1.png)
-
-* 设置`ota_0`,`ota_1`分区各800k大小
+* 连接wifi `idf.py menuconfig` -> `Example Connection Configuration` -> `WiFi SSID` & `WiFi Password
+* OTA地址为http的情况下需要启用 `idf.py menuconfig` ->`Component config`->`ESP HTTPS OTA`->`Allow HTTP for OTA` enable
+* 自定义分区表  `idf.py menuconfig` -> `Partition Table ` -> `Custom partition table CSV` <- `Custom partition CSV file` -> `partitions_2m.csv`
