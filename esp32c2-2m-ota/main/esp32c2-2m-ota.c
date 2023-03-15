@@ -49,7 +49,7 @@ esp_err_t _http_event_handler(esp_http_client_event_t *evt)
 void ota_task(void *pvParameter)
 {
     esp_http_client_config_t config = {
-        .url = "http://vaemc-file.oss-cn-guangzhou.aliyuncs.com/esp32c2-2m-ota.bin?OSSAccessKeyId=LTAIq3AJYHaWHZaq&Expires=1678860135&Signature=MTuEdB%2FLH9q6sBDvOKeL6RfPw64%3D",
+        .url = "http://xxx.com/esp32c2-2m-ota.bin",
         .event_handler = _http_event_handler,
         .keep_alive_enable = true};
 
