@@ -2,6 +2,9 @@
 
 2m flash大小的ESP32C2 OTA升级示例
 
+# IDF版本
+ESP-IDF v5.1-dev-3888-g47852846d3
+
 # 配置项
 
 * 连接wifi `idf.py menuconfig` -> `Example Connection Configuration` -> `WiFi SSID` & `WiFi Password
